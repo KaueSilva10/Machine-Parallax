@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine | Kauê Silva</title>
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="/assets/images/stars.png" alt="">
+    </header>
+    <section>
+        <img src="/assets/images/stars.png" id="stars" alt="">
+        <img src="/assets/images/moon.png" id="moon" alt="">
+        <a href="https://github.com/resolvendobug/Parallax-Scroll-WebSite" id="btn">Machine | Kauê Silva</a>
+        <img src="/assets/images/mountains_behind.png" id="mountains_behind" alt="">
+        <img src="/assets/images/mountains_front.png" id="mountains_front" alt="">
+
+    </section>
+
+    <div class="sec" id="sec">
+        <div class="container">
+            <h1>Machine</h1>
+            <h3>Digite um número decimal:</h3>
+            <input id="demo1" type="text" placeholder="Ex: 42">
+            <br><br>
+
+            <button onclick="converter()">Converter</button>
+
+            <h3 class="results">Resultados:</h3>
+
+            <div class="tables">
+                <div class="filho octal">
+                    <p>Octal:
+                    <div class="num" id="demo2"></div>
+                    </p>
+                </div>
+                <div class="filho hexa">
+                    <p>Hexadecimal:
+                    <div class="num" id="demo3"></div>
+                    </p>
+                </div>
+                <div class="filho binario">
+                    <p>Binário:
+                    <div class="num" id="demo4"></div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.20 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 16 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.marginTop = value * 0.5 + 'px';
+        })
+
+        function converter() {
+           
+
+            var decimal = Number(demo1.value);
+
+            demo2.innerHTML = `<br>${decimal.toString(8)}`;
+            demo3.innerHTML = `<br>${decimal.toString(16).toUpperCase()}`;
+            demo4.innerHTML = `<br>${decimal.toString(2)}`;
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
