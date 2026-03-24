@@ -21,4 +21,4 @@ O diferencial deste projeto é a interface imersiva com camadas de montanhas e e
 ---
 
 ## ✒️ Autor
-* **Kauê Silva** - [Seu Perfil no GitHub](https://github.com/KaueSilva10)
+* **Kauê Silva** - (https://github.com/KaueSilva10)
