@@ -17,21 +17,8 @@ O diferencial deste projeto é a interface imersiva com camadas de montanhas e e
 * **CSS3** (Layout Flexbox e Efeitos Parallax)
 * **JavaScript** (Lógica de conversão e manipulação de DOM)
 * **Google Fonts** (Tipografia Poppins)
-
----
-
-## 🔗 Demonstração
-Você pode acessar o projeto online através do link abaixo:
-👉 **[CLIQUE AQUI PARA TESTAR A MACHINE](COLE_O_LINK_DO_SEU_GITHUB_PAGES_AQUI)**
-
----
-
-## 📸 Screenshots
-<div align="center">
-  <img src="./assets/images/screenshot-da-machine.png" alt="Preview da Machine" width="800px">
-</div>
-
+  
 ---
 
 ## ✒️ Autor
-* **Kauê Silva** - [Seu Perfil no GitHub](https://github.com/resolvendobug)
+* **Kauê Silva** - [Seu Perfil no GitHub](https://github.com/KaueSilva10)
